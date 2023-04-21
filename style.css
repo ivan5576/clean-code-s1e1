@@ -28,36 +28,36 @@
 
 }
 
-.todo-app  {
+.todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.new-task-input,
+.new-item__input,
 .edit-input,
-.filled-label {
+.todo-app__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.new-task-wrapper {
+.new-item__wrapper {
   display: flex;
 }
 
-.list {
+.todo-app__list {
   margin: 0;
   padding: 0px;
 }
 
-.list-item,
-.list-title {
+.todo-app__item,
+.todo-app__list {
   list-style: none;
 }
 
-.new-task-input,
-.task-input,
+.new-item__input,
+.todo-app__text-input,
 .button{
   outline: none;
 }
@@ -77,8 +77,8 @@
 }
 
 /* Heading */
-.list-title,
-.empty-label {
+.todo-app__title,
+.new-item__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,8 +88,8 @@
   text-transform: uppercase;
 }
 
-.new-task-input,
-.task-input {
+.new-item__input,
+.todo-app__text-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -103,12 +103,12 @@
 }
 
 .new-task-input,
-.task-input:focus {
+.todo-app__text-input:focus {
   color: #333;
 }
 
 /* New Task */
-.empty-label {
+.new-item__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -118,7 +118,7 @@
 }
 
 /* Task list */
-.list-item {
+.todo-app__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -127,32 +127,32 @@
   align-items: center;
 }
 
-.list-item > * {
+.todo-app__item > * {
   vertical-align: middle;
 }
 
-.checkbox-input {
+.todo-app__cb-input {
   margin: 0 10px;
 }
 
-.filled-label {
+.todo-app__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-input {
+.todo-app__text-input {
   width: 226px;
 }
 
-.remove-img {
+.todo-app__remove-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.remove-img:hover {
+.todo-app__remove-icon:hover {
   transform: rotateZ(0);
 }
 
@@ -163,15 +163,15 @@
 }
 
 /* Edit Task */
-.task-input {
+.todo-app__text-input {
   display: none;
 }
 
-.edit-mode .task-input {
+.edit-mode .todo-app__text-input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .filled-label {
+.edit-mode .todo-app__label_hide {
   display: none;
 }
