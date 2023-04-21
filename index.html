@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <section class="eisenhower-matrix">
-      <img class="eisenhower-img" src="./eisenhower-matrix.jpg">
+    <div class="eisenhower-matrix">
+      <img class="eisenhower-img" alt="Eisenhower matrix" src="./eisenhower-matrix.jpg">
       <a class="more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </section>
     <section class="todo-app">
@@ -29,6 +29,9 @@
             <img class="remove-img" src="./remove.svg">
           </button>
         </li>
+            <input class="checkbox-input" type="checkbox"><label class="filled-label">Pay Bills</label>
+            <input class="task-input" type="text"><button class="button edit">Edit</button>
+            <button class="button delete"><img class="remove-img" src="./remove.svg" alt="Remove icon"></button></li>
         <li class="list-item edit-mode">
           <input class="checkbox-input" type="checkbox">
           <label class="filled-label hide-label">Go Shopping</label>
@@ -38,6 +41,9 @@
             <img class="remove-img" src="./remove.svg">
           </button>
         </li>
+            <input class="checkbox-input" type="checkbox"><label class="filled-label hide-label">Go Shopping</label>
+            <input class="task-input edit-input" type="text" value="Go Shopping"><button class="button edit">Save</button>
+            <button class="button delete"><img class="remove-img" src="./remove.svg" alt="Remove icon"></button></li>
       </ul>
       <h2 class="list-title">Completed</h2>
       <ul class="list" id="completed-tasks">
@@ -50,6 +56,10 @@
             <img class="remove-img" src="./remove.svg">
           </button>
         </li>
+        <li class="list-item"><input class="checkbox-input" type="checkbox" checked>
+            <label class="filled-label completed-label">See the Doctor</label>
+            <input class="task-input" type="text"><button class="button edit">Edit</button>
+            <button class="button delete"><img class="remove-img" src="./remove.svg" alt="Remove icon"></button></li>
       </ul>
     </section>
     <script src="app.js"></script>
