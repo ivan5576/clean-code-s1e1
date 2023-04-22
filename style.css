@@ -35,7 +35,7 @@
 }
 
 .new-item__input,
-.edit-input,
+.todo-app__text-input,
 .todo-app__label {
   width: 56%;
   display: inline-block;
@@ -172,6 +172,6 @@
   width: 224px;
 }
 
-.edit-mode .todo-app__label_hide {
+.edit-mode .todo-app__label {
   display: none;
 }
